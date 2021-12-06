@@ -1,0 +1,194 @@
+.row-des-container {
+  width: calc(100vw - 100px);
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: flex-start;
+  background-color: transparent;
+  margin-top: 15px;
+}
+.row-des-container.youtube-container {
+  height: 755px;
+}
+.row-des {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 350px;
+  border-radius: 40px;
+  margin-bottom: 15px;
+}
+.row-des-poster {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 13px;
+  margin-right: 50px;
+}
+.row-des-info {
+  width: 600px;
+  height: 300px;
+}
+.row-des-title {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.row-des-description {
+  margin: 0;
+  font-size: 15px;
+  margin-bottom: 10px;
+  max-height: 95px;
+  overflow: hidden;
+}
+.row-des-year {
+  margin: 0;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.row-des-traler-btn {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #3be8b0;
+  padding: 7px 20px 4px 20px;
+  transition: all 200ms;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+.row-des-traler-btn:hover {
+  background-color: white;
+  color: black;
+}
+.row-des-traler-btn[disabled] {
+  background-color: rgb(189, 189, 189);
+  cursor: auto;
+}
+.row-des-traler-btn[disabled]:hover {
+  background-color: rgb(189, 189, 189);
+  color: white;
+}
+.row-des-close-btn {
+  position: absolute;
+  top: 23px;
+  right: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 200ms all;
+}
+.row-des-close-btn:hover {
+  color: rgb(226, 59, 59);
+}
+.youtube {
+  width: 100%;
+  height: 390px;
+  background-color: black;
+  z-index: 900;
+}
+.row-des-list-btn {
+  border: none;
+  outline: none;
+  background-color: rgb(27, 175, 14);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  width: 70px;
+  border-radius: 4px;
+  height: 23px;
+  padding-right: 10px;
+  line-height: 23px;
+  transition: all 200ms;
+  cursor: pointer;
+}
+.row-des-list-btn:hover {
+  color: black;
+  background-color: white;
+}
+.row-des-list-btn[disabled] {
+  background-color: rgb(189, 189, 189);
+  cursor: auto;
+}
+.row-des-list-btn[disabled]:hover {
+  background-color: rgb(189, 189, 189);
+  color: white;
+}
+.remove-btn {
+  background-color: rgb(255, 32, 32);
+}
+
+/* MEDIA QUERYS */
+
+@media (max-width: 1400px) {
+  .row-des-info {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .row-des-info {
+    width: 400px;
+  }
+}
+@media (max-width: 900px) {
+  .row-des-title {
+    max-width: 310px;
+  }
+  .row-des-info {
+    width: 350px;
+  }
+  .row-des-description {
+    font-size: 13px;
+  }
+}
+@media (max-width: 750px) {
+  .row-des-title {
+    max-width: 260px;
+    font-size: 20px;
+  }
+  .row-des-info {
+    width: 300px;
+  }
+  .row-des-description {
+    font-size: 13px;
+  }
+}
+@media (max-width: 650px) {
+  .row-des-title {
+    max-width: 170px;
+    font-size: 15px;
+  }
+  .row-des-info {
+    width: 200px;
+  }
+  .row-des-description {
+    font-size: 11px;
+  }
+}
+.row-des-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 200ms all;
+  z-index: 100;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.row-des-close-btn:hover {
+  color: rgb(226, 59, 59);
+}

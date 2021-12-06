@@ -1,0 +1,110 @@
+.search-card {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.search-card-poster {
+  width: 150px;
+  height: 225px;
+  border-radius: 13px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+.search-card-title {
+  padding-top: 5px;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.search-card-description {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 10px;
+  max-height: 125px;
+}
+.search-list-btn {
+  border: none;
+  outline: none;
+  background-color: rgb(27, 175, 14);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  width: 70px;
+  border-radius: 4px;
+  height: 23px;
+  padding-right: 10px;
+  line-height: 22px;
+  transition: all 200ms;
+  cursor: pointer;
+}
+.search-list-btn:hover {
+  color: black;
+  background-color: white;
+}
+.search-list-btn[disabled] {
+  background-color: rgb(189, 189, 189);
+  cursor: auto;
+}
+.search-list-btn[disabled]:hover {
+  background-color: rgb(189, 189, 189);
+  color: white;
+}
+.remove-btn {
+  background-color: rgb(255, 32, 32);
+}
+
+/* MEDIA QUERYS */
+@media (max-width: 900px) {
+  .search-card {
+    width: 600px;
+    margin-bottom: 20px;
+  }
+  .search-card-poster {
+    width: 150px;
+    height: 225px;
+    border-radius: 13px;
+    margin-right: 20px;
+  }
+  .search-card-title {
+    padding-top: 5px;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .search-card-description {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .search-card {
+    width: 500px;
+    margin-bottom: 30px;
+  }
+  .search-card-poster {
+    width: 150px;
+    height: 225px;
+    border-radius: 13px;
+    margin-right: 20px;
+  }
+  .search-card-title {
+    padding-top: 5px;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .search-card-description {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}

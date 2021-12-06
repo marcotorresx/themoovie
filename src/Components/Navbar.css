@@ -1,0 +1,70 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 30px;
+  z-index: 1000;
+  transition-timing-function: ease-in;
+  transition: all 300ms;
+}
+.navbar-black {
+  background-color: rgba(0, 0, 0, 0.877);
+}
+.navbar-logo {
+  font-family: "Londrina Solid";
+  flex-grow: 1;
+  font-size: 45px;
+  color: #3be8b0;
+  cursor: pointer;
+  text-decoration: none;
+}
+.navbar-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 400px;
+  margin-right: 30px;
+}
+.navbar-btn {
+  width: auto;
+  outline: none;
+  padding: 7px 12px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: 300ms all;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.navbar-btn:hover {
+  background-color: white;
+  color: black;
+}
+.close-btn:hover {
+  color: rgb(240, 21, 64);
+}
+
+/* MEDIA QUERYS */
+@media (max-width: 800px) {
+  .navbar-logo {
+    font-size: 40px;
+  }
+  .navbar-btn {
+    padding: 5px 9px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 750px) {
+  .navbar-logo {
+    font-size: 35px;
+  }
+}

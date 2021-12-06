@@ -1,0 +1,100 @@
+.search {
+  padding-top: 150px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #15495e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #15495e,
+    #2fca8a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #15495e,
+    #2fca8a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.search-container {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  position: relative;
+  max-width: 1000px;
+  margin-bottom: 50px;
+}
+.search-input {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  height: 40px;
+  width: 500px;
+  color: black;
+  padding-left: 20px;
+  font-size: 17px;
+}
+.search-container i {
+  color: #3be8b0;
+  position: absolute;
+  font-size: 20px;
+  top: 0px;
+  right: 225px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 200ms all;
+}
+.search-container i:hover {
+  transform: scale(1.05);
+}
+.search-types {
+  display: flex;
+  height: 40px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+.search-type {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  width: 100px;
+  color: black;
+  cursor: pointer;
+  font-weight: 500;
+}
+.search-type.active {
+  background-color: #3be8b0;
+  color: white;
+}
+
+/* MEDIA QUERYS */
+
+@media (max-width: 900px) {
+  .search-input {
+    width: 400px;
+    padding-left: 20px;
+    font-size: 17px;
+  }
+  .search-container i {
+    font-size: 20px;
+    top: 0px;
+    right: 225px;
+    padding: 10px;
+  }
+  .search-types {
+    margin-left: 20px;
+  }
+  .search-type {
+    width: 100px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 750px) {
+  .search-input {
+    width: 300px;
+  }
+}
